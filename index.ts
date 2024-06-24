@@ -14,6 +14,7 @@ const answer = await inquirer.prompt([
     }
 ])
 
+
 if(answer.operator === "Add") {
     console.log(`${answer.firstNumber} + ${answer.secondNumber} = ${answer.firstNumber+answer.secondNumber}`)
 }
@@ -36,5 +37,6 @@ else if(answer.operator === "SqaureRoot") {
     console.log(`Square root of ${answer.firstNumber} is: ${Math.sqrt(answer.firstNumber)}`)
     console.log(`Square root of ${answer.secondNumber} is: ${Math.sqrt(answer.secondNumber)}`)
 }
+
 
 console.log('Simple Calculator Ends here')
