@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 
+
 import inquirer from "inquirer"
 
 const answer = await inquirer.prompt([
@@ -10,11 +11,9 @@ const answer = await inquirer.prompt([
     }
 ])
 
-// if(answer.operator === "Subtract") {
-//     console.log(`You want to ${answer.operator}, ${answer.secondNumber} from ${answer.firstNumber}`)
-// } else {
-//     console.log(`You want to ${answer.operator}, ${answer.firstNumber} and ${answer.secondNumber}`)
-// }
+// Making Changes for GitHub:
+// 1) Removing the initail : if(answer.operator === "Subtract")
+// 2) console an ending message:
 
 
 if(answer.operator === "Add") {
@@ -40,4 +39,4 @@ else if(answer.operator === "SqaureRoot") {
     console.log(`Square root of ${answer.secondNumber} is: ${Math.sqrt(answer.secondNumber)}`)
 }
 
-
+console.log('Simple Calculator Ends here')
