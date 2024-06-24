@@ -14,7 +14,6 @@ const answer = await inquirer.prompt([
     }
 ])
 
-
 if(answer.operator === "Add") {
     console.log(`${answer.firstNumber} + ${answer.secondNumber} = ${answer.firstNumber+answer.secondNumber}`)
 }
