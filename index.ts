@@ -1,5 +1,8 @@
 #! /usr/bin/env node
 
+// Making Changes for GitHub:
+// 1) Removing the initail : if(answer.operator === "Subtract")
+// 2) console an ending message:
 
 import inquirer from "inquirer"
 
@@ -10,10 +13,6 @@ const answer = await inquirer.prompt([
         choices:["Add", "Subtract", "Multiply", "Devide", "Remainder", "Power", "SqaureRoot"]
     }
 ])
-
-// Making Changes for GitHub:
-// 1) Removing the initail : if(answer.operator === "Subtract")
-// 2) console an ending message:
 
 
 if(answer.operator === "Add") {
